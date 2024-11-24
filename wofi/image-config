@@ -1,0 +1,17 @@
+allow_images=true
+allow_markup=true
+content_halign=fill
+filter_rate=100
+gtk_dark=true
+halign=fill
+height=500
+image_size=300
+insensitive=true
+location=center
+no_actions=true
+orientation=vertical
+show=dmenu
+width=1000
+columns=3
+style=/home/khang/.config/wofi/image-config.css
+

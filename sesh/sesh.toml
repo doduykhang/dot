@@ -1,0 +1,22 @@
+[default_session]
+startup_command = "nvim -c ':Telescope find_files'"
+
+[[session]]
+name = "Downloads 📥"
+path = "~/Downloads"
+startup_command = "lf"
+
+[[session]]
+name = "fresk application"
+path = "~/Projects/Plogg/fresk/application"
+startup_command = "/home/khang/.config/sesh/fresk-fe"
+
+[[session]]
+name = "fresk backend"
+path = "~/Projects/Plogg/fresk/backend"
+startup_command = "/home/khang/.config/sesh/fresk-be"
+
+[[session]]
+name = "system-test"
+path = "~/Projects/DXC/UPTime/system-tests"
+startup_command = "/home/khang/.config/sesh/system-tests"

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+tmux send-keys "source ./robot/bin/activate" Enter
+tmux send-keys "nix-shell flake-fhs.nix" Enter
+tmux send-keys "./code-rf.sh" Enter

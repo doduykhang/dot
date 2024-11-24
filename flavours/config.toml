@@ -1,0 +1,43 @@
+# Commands go through bash
+shell = "bash -c '{}'"
+
+[[items]]
+file = "~/.config/kitty/theme.conf"
+template = "kitty"
+rewrite = true
+hook = 'kitten @ set-colors --all "~/.config/kitty/theme.conf" & kill -SIGUSR1 $(pgrep kitty)'
+
+[[items]]
+file = "~/.config/hypr/colors.conf"
+template = "hyprland"
+rewrite = true
+
+# [[items]]
+# file = "~/.config/waybar/color.css"
+# template = "waybar"
+# rewrite = true
+# hook = "pkill waybar && hyprctl dispatch exec waybar"
+
+[[items]]
+file = "~/.config/wofi/image-config.css"
+template = "wofi"
+start= "/* Start flavours */"
+end = "/* End flavours */"
+
+[[items]]
+file = "~/.config/wofi/style.css"
+template = "wofi"
+start= "/* Start flavours */"
+end = "/* End flavours */"
+
+[[items]]
+file = "~/.config/ags/style/colors.scss"
+template = "ags"
+rewrite = true
+hook = "pkill waybar && hyprctl dispatch exec waybar"
+
+[[items]]
+file = "~/.config/nvim/lua/config/colors.lua"
+template = "neovim"
+rewrite = true
+hook = "python ~/.config/flavours/reload-nvim"

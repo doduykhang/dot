@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+tmux split-window -v -p 30 "npm run serve"
+tmux select-pane -t :.+
+tmux send-keys "nvim" Enter

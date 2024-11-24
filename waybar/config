@@ -1,0 +1,74 @@
+
+  {
+    "battery": {
+      "format": "{icon} {capacity}%",
+      "format-alt": "{time} {icon}",
+      "format-charging": "󱐋{icon} {capacity}%",
+      "format-full": "  {capacity}%",
+      "format-icons": [
+        "󰁺",
+        "󰁻",
+        "󰁼",
+        "󰁽",
+        "󰁾",
+        "󰁿",
+        "󰂀",
+        "󰂁",
+        "󰂂"
+      ],
+      "format-plugged": " 󱐋󱐋{capacity}%",
+      "states": {
+        "critical": 15,
+        "warning": 30
+      }
+    },
+    "clock": {
+      "format": "{:%H.%M}",
+      "interval": 60,
+      "tooltip": true,
+      "tooltip-format": "{:%Y-%m-%d}"
+    },
+    "height": 30,
+    "hyprland/workspaces": {
+      "all-outputs": true,
+      "disable-scroll": true,
+      "on-click": "activate",
+      "persistent-workspaces": {
+        "1": [],
+        "10": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": [],
+        "8": [],
+        "9": []
+      }
+    },
+    "layer": "top",
+    "modules-center": [
+      "clock"
+    ],
+    "modules-left": [
+      "hyprland/workspaces"
+    ],
+    "modules-right": [
+      "mpd",
+      "custom/mymodule#with-css-id",
+      "battery",
+      "temperature",
+      "tray"
+    ],
+    "output": [
+      "eDP-1",
+      "HDMI-A-1"
+    ],
+    "position": "top",
+    "tray": {
+      "icon-size": 21,
+      "spacing": 10
+    }
+  }
+]
+

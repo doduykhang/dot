@@ -1,0 +1,115 @@
+@import "./color.css";
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "FiraCode Nerd Font";
+    font-weight: bold;
+    font-size: 16px;
+    min-height: 0;
+    color: @base0D;
+}
+
+window#waybar {
+    /*background: linear-gradient(90deg, @minori 0%, @luka 10%, @luka 90%, @minori 100%); */
+    background: @base00;
+}
+
+tooltip {
+    background: #e7e7ec;
+    opacity: 0.8;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+}
+
+tooltip label{
+    color: #2b2b2c;
+}
+
+#workspaces {
+    background: @base00;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+#workspaces button {
+    background: @base00;
+    padding: 5px;
+    margin-right: 5px;
+    border-width: 0px;
+}
+
+#workspaces button.active {
+    color: @base06;
+    background: @base02;
+    border-radius: 50%;
+}
+
+#workspaces button:hover {
+    color: #cdd6f4;
+    border-radius: 10px;
+}
+
+#custom-launch_wofi,
+#custom-launch_firefox,
+#custom-launch_thunderbird,
+#custom-launch_thunar,
+#custom-launch_kitty,
+#custom-lock_screen,
+#custom-light_dark,
+#custom-power_btn,
+#custom-power_profile,
+#custom-weather,
+#custom-myhyprv,
+#window,
+#cpu,
+#disk,
+#custom-updates,
+#memory,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#tray,
+#temperature,
+#workspaces,
+#idle_inhibitor,
+#backlight {
+    padding: 0px 8px;
+    margin: 0px 3px;
+    border: 0px;
+}
+
+#temperature.critical {
+    color: #e92d4d;
+}
+
+
+#workspaces {
+    padding-right: 0px;
+    padding-left: 5px;
+}
+
+#window {
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#custom-launch_firefox, 
+#custom-launch_thunderbird,
+#custom-launch_thunar,
+#custom-launch_wofi,
+#custom-launch_kitty,
+#custom-weather {
+    margin-left: 0px;
+    border-right: 0px;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+#custom-launch_firefox, 
+#custom-launch_kitty {
+    font-size: 20px;
+}
